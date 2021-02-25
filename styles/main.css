@@ -4,16 +4,24 @@ h1 {
     font-style: normal;
     font-size: 50px;
     text-align: center;
+    text-shadow: 3px 3px 1px var(--textShadow);
+    margin:0px;
 }
 
 h3 {
+    margin: 0px;
     text-align: center;
+}
+
+body{
+    background: var(--bg);
 }
 
 ul {
     font-family: sofia-pro, sans-serif;
     font-weight: 400;
     font-style: normal;
+    margin-top: -20px;
 }
 
 li {
@@ -24,21 +32,19 @@ li {
     font-family: sofia-pro,sans-serif;
     font-weight: 600;
     font-style: normal;
+    font-size: 20px;
 }
 
 :root {
     --orange:#f1b84d;
     --white: #ffffff;
     --black: #000000;
+    --red : #c3073fb7;
 }
 
 * {
     color: var(--fontColor);
     font-family: sofia-pro;
-}
-
-body{
-    background: var(--bg);
 }
 
 .btn {
@@ -60,6 +66,7 @@ body{
     --fontColor: var(--black);
     --btnBg: var(--black);
     --btnFontColor: var(--white);
+    --textShadow: var(--white);
   }
 
 .dark-theme {
@@ -67,4 +74,5 @@ body{
     --fontColor: var(--white);
     --btnBg: var(--white);
     --btnFontColor: var(--black);
+    --textShadow: var(--red);
 }
